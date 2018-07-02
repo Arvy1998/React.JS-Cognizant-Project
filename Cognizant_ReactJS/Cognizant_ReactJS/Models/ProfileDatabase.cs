@@ -10,8 +10,8 @@ namespace Cognizant.Models
         public static List<Profile> Profiles = new List<Profile>(
         new[]
         {
-            new Profile { Id = 1, Name = "Arvydas", Age = 19 },
-            new Profile { Id = 2, Name = "Tomas", Age = 99 }
+            new Profile { Id = 1, Name = "Arvydas", Surname = "Baranauskas", Age = 19 },
+            new Profile { Id = 2, Name = "Tomas", Surname = "Moliuskas", Age = 99 }
             }
         );
 

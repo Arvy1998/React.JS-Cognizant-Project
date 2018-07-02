@@ -4,6 +4,7 @@ import { RouteComponentProps } from 'react-router';
 interface Profile {
     id: number;
     name: string;
+    surname: string;
     age: number;
 }
 
@@ -43,6 +44,7 @@ const ProfilesTable = (profiles: Profile[]) => {
             <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Surname</th>
                 <th>Age</th>
             </tr>
         </thead>
@@ -51,6 +53,7 @@ const ProfilesTable = (profiles: Profile[]) => {
                 <tr key={profile.id}>
                     <td>{profile.id}</td>
                     <td>{profile.name}</td>
+                    <td>{profile.surname}</td>
                     <td>{profile.age}</td>
                     </tr>
             )}
